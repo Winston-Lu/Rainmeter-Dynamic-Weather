@@ -14,18 +14,22 @@ Since Rainmeter is only on Windows system, this does not work with MacOS or GNU/
 ## Installation
 To install, you only need to install the [`Dynamic Weather_1.01.rmskin` file here](https://github.com/Winston-Lu/Rainmeter-Dynamic-Weather/raw/master/Dynamic%20Weather_1.01.rmskin). The source code is provided as well. To install it, make sure [Rainmeter 4.x is installed](https://www.rainmeter.net/) and then double click the rmskin file and hit Install.
 
-Under the Skins tab, select `Dynamic weather\BackgroundWeather.ini`, and click Load. I would also set these options once loaded into Rainmeter
+I had tested this on my primary 1920x1080 screen. If you move this skin to a seperate monitor, you will also need to change the location of `Dynamic Weather\Weather\Rain\Rain.ini` and `Dynamic Weather\Weather\Snow\Snow.ini` as well. The rain skin should be configured by loading `Dynamic Weather\Weather\Rain\SettingsWindow\SettingsWindow.ini`. If not configured, the rain effect may extend to the right monitor (on a multi-monitor setup), or not take up the entirety of the monitor it is on, leaving a blank space where it doesnt rain on.
+
+Under the Skins tab, select `Dynamic weather\BackgroundWeather.ini`, and click Load. I would also set these options once loaded into Rainmeter. I would also set `Dynamic Weather\Weather\Rain\Rain.ini` and `Dynamic Weather\Weather\Snow\Snow.ini` to these settings as well
 * Position: On Desktop
-* Load Order: Lowest possible if you have other skins on the "On Desktop" layer. Something like -9999999 will do if needed.
+* Load Order: Lowest possible if you have other skins on the "On Desktop" layer. Something like -9999999 will do if needed. Set the `Rain.ini` and `Snow.ini` to at least 1 above this value
 * Draggable: Deselected
 * Click through: Selected
 
 ![Config options](https://i.imgur.com/jbFOE2H.png)
 
+If you plan to have multiple of this skin on multiple monitors, just install the skin under a different name, and load `DynamicWeather.ini` under each install, while also changing the monitor `Dynamic Weather\Weather\Rain\Rain.ini` and `Dynamic Weather\Weather\Snow\Snow.ini` loads into as well.
+
 ## Configuration
 In .\Rainmeter-Dynamic-Weather\\@Resources\Variables.inc, change `WeatherCode` to the code you find on https://weather.codes/ something like CAXX#### for Canada, US__#### for US [__ is the state, like WA for Washington and CA for California], ASXX#### for Australia, and so on.
 
-If you want to change the images, the background images are in .\Rainmeter-Dynamic-Weather\@Resources\Images. You must perseve the image names, which are case sensitive. The images provided are 2560x1440.
+If you want to change the images, the background images are in `.\Rainmeter-Dynamic-Weather\@Resources\Images`. You must perseve the image names, which are case sensitive. The images provided are 2560x1440.
 
 The skin width/height is automatically set to the current screens' width and height. If you have a different aspect ratio, you will need to change the images themselves to avoid stretching.
 
