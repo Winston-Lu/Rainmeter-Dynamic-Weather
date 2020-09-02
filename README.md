@@ -12,7 +12,7 @@ Since Rainmeter is only on Windows system, this does not work with MacOS or GNU/
 ![Night light cloud](https://i.imgur.com/Br6xbz1.png)
 
 ## Installation
-To install, you only need to install the `Dynamic Weather_1.01.rmskin` file. The source code is provided as well. To install it, make sure [Rainmeter 4.x is installed](https://www.rainmeter.net/) and then double click the rmskin file and hit Install.
+To install, you only need to install the [`Dynamic Weather_1.01.rmskin` file here](https://github.com/Winston-Lu/Rainmeter-Dynamic-Weather/raw/master/Dynamic%20Weather_1.01.rmskin). The source code is provided as well. To install it, make sure [Rainmeter 4.x is installed](https://www.rainmeter.net/) and then double click the rmskin file and hit Install.
 
 Under the Skins tab, select `Dynamic weather\BackgroundWeather.ini`, and click Load. I would also set these options once loaded into Rainmeter
 * Position: On Desktop
