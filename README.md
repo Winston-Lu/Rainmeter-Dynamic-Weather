@@ -2,7 +2,7 @@
 
 A Rainmeter skin template for a background that changes depending on the current location's time and weather 
 
-This skin uses images sized for 1920x1080 screens. See **Configuration** for details to change this below
+This skin uses 2560x1440 (16x9) images that will change size depending on your screen resolution. See **Configuration** for details to change this below
 
 Since Rainmeter is only on Windows system, this does not work with MacOS or GNU/Linux
 
@@ -25,9 +25,9 @@ Under the Skins tab, select `Dynamic weather\BackgroundWeather.ini`, and click L
 ## Configuration
 In .\Rainmeter-Dynamic-Weather\\@Resources\Variables.inc, change `WeatherCode` to the code you find on https://weather.codes/ something like CAXX#### for Canada, US__#### for US [__ is the state, like WA for Washington and CA for California], ASXX#### for Australia, and so on.
 
-If you want to change the images, the background images are in .\Rainmeter-Dynamic-Weather\@Resources\Images. You must perseve the image names, which are case sensitive. The images provided are 1920x1080
+If you want to change the images, the background images are in .\Rainmeter-Dynamic-Weather\@Resources\Images. You must perseve the image names, which are case sensitive. The images provided are 2560x1440.
 
-If you want to change the screen resolution of the skin itself, the only change you need to make is to change resolution of the images to your desired resolution. The skin width/height is automatically set to the current screens' width and height. 
+The skin width/height is automatically set to the current screens' width and height. If you have a different aspect ratio, you will need to change the images themselves to avoid stretching.
 
 ## Notes
 This will hide all desktop icons and shortcuts. Due to the fact that Rainmeter can not be loaded undeneath desktop icons, there is no fix for this. The Rainmeter solution to this is to customize your desktop with dockers and launchers to replace them (if you dont use your start menu or taskbar to launch applications). Desktop shortcuts are overrated, and there are better replacements anyways.
