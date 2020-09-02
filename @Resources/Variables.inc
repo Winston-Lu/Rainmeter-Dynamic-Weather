@@ -1,7 +1,7 @@
 ; Weather-related variables
 ; Find your weather code for your location here: https://weather.codes/
 [Variables]
-WeatherCode=CAXX0518
+WeatherCode=CAXX0530
 
 Url=https://weather.com/en-CA/weather/today/l/#WeatherCode#
 WeatherConditionRegex=(?siU)<div data-testid="wxPhrase"(.*)">\s*(\S.*)\s*</div>
@@ -47,8 +47,8 @@ IdleAudioTimeout=1
 ; How long before hiding the visualizer when no sound is playing
 ; Environment variables for settings window
 SkinGroup=RainyDays
-Config=Montana Dynamic Weather\Backgrounds\Weather\Rain
-ConfigPath=C:\Users\winst\Documents\Rainmeter\Skins\Montana Dynamic Weather\Backgrounds\Weather\Rain\Rainy Days.ini
+Config=#ROOTCONFIG#\Weather\Rain
+ConfigPath=#ROOTCONFIG#\Weather\Rain\Rainy Days.ini
 WriteVariable=Color
 Slant=None
 Invert=0
